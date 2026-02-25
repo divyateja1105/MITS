@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .navbar{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: lightblue;
+            margin: 20px;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 250px 50px 40px;
+            grid-template-rows: 50px 50px 50px;
+            gap:5px;
+        }
+        .grid-container .box{
+            border: 1px solid black;
+        }
+        #box1{
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        #box4{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        } */      
+        .grid-containers{
+           display: grid;
+            grid-template-columns: 250px 100px 100px;
+            grid-template-rows: 50px 50px 50px;
+            gap:5px;
+            justify-content: center;
+            text-align: center;
+        }
+         .grid-containers div{
+            border: 2px solid black;
+            background-color: rgb(91, 243, 91);
+        }
+        .header{
+            grid-column: 1/4;
+        }
+        .slidebar{
+            grid-row: 2/4;
+        }
+        .content1{
+                grid-column: 2/4;
+        }
+        .content2{
+                grid-column: 2/3;
+        }
+        .content3{
+                grid-column: 3/4;
+        }
+        .footer{
+                grid-column: 1/4;
+        }           
+
+        
+    </style>
+</head>
+<body>
+    <!-- <h1>navbar</h1>
+    <ul class="navbar">
+        <li>Home</li>
+        <li>About</li>
+        <li>Service</li>
+        <li>Contact</li>
+    </ul>
+    <h1>grid</h1>
+    <div class="grid-container">
+        <div class="box" id="box1">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box" id="box4">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div> -->
+
+    <!-- </div> -->
+    <h1>grid example</h1>
+    <div class="grid-containers">
+        <div class="header">header</div>
+        <div class="slidebar">slidebar</div>
+        <div class="content1">content1</div>
+        <div class="content2">content2</div>
+        <div class="content3">content3</div>
+        <div class="footer">footer</div>
+    </div>
+
+</body>
+</html>
