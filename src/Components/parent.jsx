@@ -1,11 +1,17 @@
+import React, { useContext } from "react";
+import Child from "./child";
+import { userContext } from "../App";
 const Parent = () => {
-    const getData=(data)=(
-        console.log("Recevied from child:",data)
-    )
-    return (
-        <div>
-            <Child send={getData}/>
-        </div>
-    ) 
+  const { name } = useContext(userContext);
+  const getData = (data) => {
+    console.log("Received from child:", data);
+  }
+  return (
+    <div>
+      <h2>Parent Component</h2>
+      <h3>Context Name: {name}</h3>
+      <Child send={getData} />
+    </div>
+  )
 }
 export default Parent
